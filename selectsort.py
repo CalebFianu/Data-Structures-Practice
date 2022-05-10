@@ -8,7 +8,7 @@ def selectsort(A):
         A[i] = A[max_position]
         A[max_position] = temp
 
-A = [1,4,2,5,8]
+A = [1,4,2,5,8,-2,14]
 print('Your original array is ', A)
 selectsort(A)
 print('Your sorted array is ', A)
