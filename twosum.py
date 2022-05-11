@@ -13,5 +13,5 @@ def find_num(arr, target):
     return False
 
 arr = [1,8,3,9,5,6,2]
-arr2 = [1,2,3,4,5]
+arr2 = [1,2,3,4,5,6]
 print(find_num(arr2,10))
