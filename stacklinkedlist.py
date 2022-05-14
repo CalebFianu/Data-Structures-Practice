@@ -28,6 +28,28 @@ class Stack:
         else: 
             return self.head.val
 
+class MinStack:
+    def __init__(self):
+        self.items = []
+        self.mins = []
+
+    def push(self, val):
+        self.items.append(val)
+        if(len(self.mins) == 0):
+            self.mins.append(val)
+        else:
+            self.mins.append(min(val, self.getMin()))
+
+    def pop(self):
+        self.items.pop()
+        self.mins.pop()
+
+    def peek(self):
+        return self.items[-1]
+
+    def getMin(self):
+        return self.mins[-1]
+
 def main():
 
     #valid parantheses problem
